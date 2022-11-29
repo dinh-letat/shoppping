@@ -185,17 +185,17 @@ main .row h2{
 }
 
 .fa-facebook {
-    color: rgb(0, 162, 255)
+    color: rgba(0, 162, 255, 0.505)
 }
 
 .fa-instagram {
-    color: orange;
+    color: rgba(255, 166, 0, 0.458);
 }
 
 .fa-twitter {
-    color: aqua;
+    color: rgba(0, 255, 255, 0.501);
 }
 
 .fa-youtube {
-    color: red;
+    color: rgba(255, 0, 0, 0.468);
 }
