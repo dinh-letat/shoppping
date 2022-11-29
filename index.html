@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTL Store - Chuyên phụ kiện điện thoại</title>
+    <link rel="website icon" type="png" href="img/React-icon.svg.png">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <span><a>DTL</a></span>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#carousel">Product</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li>
+                    <a href="#product">Product List</a>
+                </li>
+                <li>
+                    <a href="#footer">Contact</a>
+                </li>
+            </ul>
+            <a href="./pages/person.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- carousel -->
+    <div class="carousel" id="carousel">
+        <div class="container">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" style="color: black; background-color:rgb(127, 133, 255)" data-slide-to="0"
+                        class="active"></li>
+                    <li data-target="#demo" style="color: black; background-color:rgb(127, 133, 255)" data-slide-to="1">
+                    </li>
+                    <li data-target="#demo" style="color: black; background-color:rgb(127, 133, 255)" data-slide-to="2">
+                    </li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/12pro.png" alt="Los Angeles" width="00" height="300">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/silver.png" alt="Chicago" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/sacduphong.png" alt="New York" width="1100" height="100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <i class="fa-solid fa-angle-left" style="font-size: 40px; color:rgb(235, 147, 33)"></i>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <i class="fa-solid fa-angle-right" style="font-size: 40px; color:rgb(235, 147, 33)"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end carousel -->
+
+    <!-- about -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="content">
+                <h2>THE EASY WAY TO TAKEOVER A LEASE</h2>
+                <ul>
+                    <li>
+                        <h4>Cung cấp cho mọi người những dòng sản phẩm</h4>
+                    </li>
+                    <li>
+                        <p>Ốp lưng các loại điện thoại </p>
+                    </li>
+                    <li>
+                        <p>Pin, sạc dự phòng</p>
+                    </li>
+                    <li>
+                        <p>Tai nghe các loại</p>
+                    </li>
+                </ul>
+            </div>
+            <img src="img/accessories.jpg" alt="">
+        </div>
+    </div>
+    <!-- end about -->
+
+    <!-- main -->
+    <main id="product">
+        <div class="container">
+            <h3>Danh Sách Sản Phẩm</h3>
+            <div class="row mt-4" id="case">
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/case1.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>ỐP LƯNG IPHONE VIỀN NỔI LƯNG TRONG DT 2022</h2>
+                            <p><b>Giá:</b> 80.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/case2.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>ỐP LƯNG SILICON MẠ MÀU VIỀN CHO IPHONE</h2>
+                            <p><b>Giá:</b> 120.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/case3.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>ỐP LƯNG IPHONE X&M BẢO VỆ CAMERA</h2>
+                            <p><b>Giá:</b> 150.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/case4.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>ỐP LƯNG IPHONE TRONG VIỀN VUÔNG NỔI DẠ QUANG</h2>
+                            <p><b>Giá:</b> 100.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4" id="battery">
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/bat1.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>BỘ SẠC KHÔNG DÂY KAKU KSC – 315</h2>
+                            <p><b>Giá:</b> 185.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/bat2.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>BỘ SẠC KHÔNG DÂY KAKU KSC – 512</h2>
+                            <p><b>Giá:</b> 278.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/bat3.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>ĐẾ SẠC NHANH KHÔNG DÂY 3IN1 10W HOCO CW24</h2>
+                            <p><b>Giá:</b> 425.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/bat4.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>ĐẾ SẠC NHANH KHÔNG DÂY HOCO CW23 10W 2IN1</h2>
+                            <p><b>Giá:</b> 345.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4" id="headphone">
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/head1.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>TAI NGHE BLUETOOTH HOCO ES45</h2>
+                            <p><b>Giá:</b> 536,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/head2.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>TAI NGHE BLUETOOTH KAKU KSC – 549</h2>
+                            <p><b>Giá:</b> 749,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/head3.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>TAI NGHE THỂ THAO BLUETOOTH KAKU KSC 391</h2>
+                            <p><b>Giá:</b> 299,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/head4.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>TAI NGHE BLUETOOTH XIPIN BX06</h2>
+                            <p><b>Giá:</b> 536,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4" id="pin">
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="150px" src="./img/pin1.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>PIN DỰ PHÒNG BOROFONE BJ1 10.000MAH</h2>
+                            <p><b>Giá:</b> 295.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="150px" src="./img/pin2.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>PIN DỰ PHÒNG HOCO CJ5 10.000MAH</h2>
+                            <p><b>Giá:</b> 349.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="150px" src="./img/pin3.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>PIN DỰ PHÒNG HOCO J52A 20.000MAH</h2>
+                            <p><b>Giá:</b> 449.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="150px" src="./img/pin4.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>PIN DỰ PHÒNG KHÔNG DÂY HOCO J50 10.000MAH</h2>
+                            <p><b>Giá:</b> 565.000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4" id="glass">
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/glas1.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>Kính Cường Lực Chống Nhìn Trộm IP KingKong Chính Hãng</h2>
+                            <p><b>Giá:</b> 179,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/glas2.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>Kính Cường Lực iPhone Chống Cận Thị JOYROOM JM216</h2>
+                            <p><b>Giá:</b> 179,000 đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/glas3.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>Kính Cường Lực Sư Tử 5D - 9H Điện Thoại SamSung</h2>
+                            <p><b>Giá:</b> 95,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/glas4.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>Kính Cường Lực 10D iPhone Cao Cấp Giá Rẻ</h2>
+                            <p><b>Giá:</b> 89,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4" id="ppf">
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/ppf1.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>Miếng dán PPF Samsung Galaxy S21 Plus Full mặt trước</h2>
+                            <p><b>Giá:</b> 120,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/ppf2.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>Miếng dán PPF iPhone 14 Full viền mặt sau</h2>
+                            <p><b>Giá:</b> 120,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/ppf3.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>Dán PPF full cao cấp mặt sau cho Samsung Galaxy Note 20 Ultra</h2>
+                            <p><b>Giá:</b> 120,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div class="card" style="width: 100%; height: 400px;">
+                        <a href="">
+                            <img width="100%" height="200px" src="./img/ppf4.png" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2>Miếng Dán Cường Lực iPhone X - Remax Giá Rẻ</h2>
+                            <p><b>Giá:</b> 79,000đ</p>
+                            <button>Buy now</button>
+                            <button>Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="content">
+                <ul>
+                    <h2>Quick Links</h2>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Term & Conditions</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h2>About Us</h2>
+                    <li>
+                        <a href="#">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Story</a>
+                    </li>
+                    <li>
+                        <a href="#">Career</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h2>Home</h2>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h2>Contacts</h2>
+                    <li>
+                        <a href="#">123l, Bozen Building, Bole Sub</a>
+                    </li>
+                    <li>
+                        <a href="#">+84 987654321</a>
+                    </li>
+                    <li>
+                        <a href="#">contact@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer__bottom">
+                <span>Copyright ©2022 All rights reserved</span>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>
