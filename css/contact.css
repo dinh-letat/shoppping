@@ -4,6 +4,8 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+
+
 header .container {
     max-width: 1200px;
     margin: auto;
@@ -52,39 +54,32 @@ header .container a {
     color: rgb(236, 65, 63);
 }
 
+main .icon i{
+    background-color: rgb(73, 117, 236);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 50px;
+}
 
-main .container h2{
-    font-size: 20px;
-}
-main .container .card{
-    text-align: center;
-}
-main .content{
-    font-size: 25px;
+main .container{
     display: flex;
     justify-content: space-between;
-    align-self: center;
-    
-    text-align: left;
+    align-items: center;
 }
-main .describe{
-    margin-left: 20px;
-    width: 100%;
-}
-main .describe a{
-    text-decoration: none;
-}
-main button{
-    border: 0px;
-    padding: 5px 20px;
-    border-radius: 50px;
-    color: #fff;
-    background-color: orange;
-}
-
-main .main{
-    text-align: center;
-    font-size: 24px;
+main .justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+} 
+main .info-wrap .dbox .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+} main .align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
 }
 
 
@@ -118,8 +113,7 @@ main .main{
     text-decoration: none;
 }
 
-hr{
-    color: green;
+#footer .container hr{
     border: 1px solid gray;
 }
 #footer .footer__bottom {

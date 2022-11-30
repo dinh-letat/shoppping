@@ -52,7 +52,7 @@ header .container ul li a:hover {
 
 header .container a {
     padding: 20px;
-    color: #e95353;
+    color: rgb(236, 65, 63);
 }
 
 .carousel {
@@ -95,6 +95,7 @@ header .container a {
 .about {
     position: relative;
     top: 100px;
+    margin-bottom: 100px;
     min-height: 85vh;
     display: flex;
     align-items: center;
@@ -140,6 +141,7 @@ main button {
     border-radius: 50px;
     background-color: orange;
     color: white;
+    border: 0px;
 }
 main .row h2{
     font-size: 15px;
@@ -149,7 +151,7 @@ main .row h2{
 
 
 #footer {
-    background-color: darkgray;
+    background-color: rgb(17, 17, 17);
 }
 
 #footer .container {
@@ -166,14 +168,20 @@ main .row h2{
 
 #footer .content ul li {
     display: block;
+    color: #3F4048;
 }
-
+ #footer .container ul h2{
+    font-size: 25px;
+ }
 #footer .content ul li a {
-    color: black;
-    font-size: 20px;
+    color: rgb(85, 76, 76);
+    font-size: 18px;
     text-decoration: none;
 }
 
+#footer .container hr{
+    border: 1px solid gray;
+}
 #footer .footer__bottom {
     display: flex;
     justify-content: space-between;

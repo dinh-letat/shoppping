@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="website icon" type="png" href="../img/React-icon.svg.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <span><a>DTL</a></span>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#carousel">About</a>
+                </li>
+                <li>
+                    <a href="../pages/services.html">Services</a>
+                </li>
+                <li>
+                    <a href="../pages/gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="../pages/contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="cart">
+                <a href="../pages/cart.html"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                <a href="../pages/person.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="col-md-7 d-flex align-items-stretch">
+                                <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <h3 class="mb-4">Get in touch</h3>
+                                    <div id="form-message-warning" class="mb-4"></div>
+                                    <div id="form-message-success" class="mb-4">
+                                        Your message was sent, thank you!
+                                    </div>
+                                    <form method="POST" id="contactForm" name="contactForm" novalidate="novalidate">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="name" id="name"
+                                                        placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" name="email" id="email"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="subject" id="subject"
+                                                        placeholder="Subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <div class="form-group">
+                                                    <textarea name="message" class="form-control" id="message" cols="30"
+                                                        rows="7" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <div class="form-group">
+                                                    <input type="button" value="Send Message" class="btn btn-primary">
+                                                    <div class="submitting"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex align-items-stretch text-white icon">
+                                <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                                    <h3 class="mb-4 mt-md-4">Contact us</h3>
+                                    <div class="mt-5">
+                                        <i class="fa-solid fa-location-dot me-4"></i>
+                                        <b>Address:</b> 198 West 21th Street, Suite 721 New York NY 10016
+                                    </div>
+                                    <div class="mt-5">
+                                        <i class="fa fa-phone me-4" aria-hidden="true"></i>
+                                        <b>Phone:</b> + 1235 2355 98
+                                    </div>
+                                    <div class="mt-5">
+                                        <i class="fa fa-paper-plane me-4" aria-hidden="true"></i>
+                                        <b>Email:</b> info@yoursite.com
+                                    </div>
+                                    <div class="mt-5">
+                                        <i class="fas fa-globe-americas me-4"></i>
+                                        <b>Website</b> yoursite.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-iframe mt-5 ">
+            <iframe width="100%" height="1000px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""></iframe>
+        </div>
+    </main>
+    
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="content mt-3">
+                <ul>
+                    <h2 class="text-white">Quick Links</h2>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Term & Conditions</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h2 class="text-white">About Us</h2>
+                    <li>
+                        <a href="#">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Story</a>
+                    </li>
+                    <li>
+                        <a href="#">Career</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h2 class="text-white">Home</h2>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+                <ul class="text-secondary">
+                    <h2 class="text-white">Contacts</h2>
+                    <li>
+                        <a href="#">123l, Bozen Building, Bole Sub</a>
+                    </li>
+                    <li>
+                        <a href="#">+84 987654321</a>
+                    </li>
+                    <li>
+                        <a href="#">contact@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer__bottom text-secondary">
+                <span>Copyright ©2022 All rights reserved</span>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

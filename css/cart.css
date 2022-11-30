@@ -54,8 +54,10 @@ main h3{
     font-size: 45px;
 }
 
+
+
 #footer {
-    background-color: darkgray;
+    background-color: rgb(17, 17, 17);
 }
 
 #footer .container {
@@ -72,14 +74,20 @@ main h3{
 
 #footer .content ul li {
     display: block;
+    color: #3F4048;
 }
-
+ #footer .container ul h2{
+    font-size: 25px;
+ }
 #footer .content ul li a {
-    color: black;
-    font-size: 20px;
+    color: rgb(85, 76, 76);
+    font-size: 18px;
     text-decoration: none;
 }
 
+#footer .container hr{
+    border: 1px solid gray;
+}
 #footer .footer__bottom {
     display: flex;
     justify-content: space-between;
@@ -91,17 +99,17 @@ main h3{
 }
 
 .fa-facebook {
-    color: rgb(0, 162, 255)
+    color: rgba(0, 162, 255, 0.505)
 }
 
 .fa-instagram {
-    color: orange;
+    color: rgba(255, 166, 0, 0.458);
 }
 
 .fa-twitter {
-    color: aqua;
+    color: rgba(0, 255, 255, 0.501);
 }
 
 .fa-youtube {
-    color: red;
+    color: rgba(255, 0, 0, 0.468);
 }

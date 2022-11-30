@@ -4,6 +4,8 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+
+
 header .container {
     max-width: 1200px;
     margin: auto;
@@ -51,44 +53,6 @@ header .container a {
     padding: 20px;
     color: rgb(236, 65, 63);
 }
-
-
-main .container h2{
-    font-size: 20px;
-}
-main .container .card{
-    text-align: center;
-}
-main .content{
-    font-size: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    
-    text-align: left;
-}
-main .describe{
-    margin-left: 20px;
-    width: 100%;
-}
-main .describe a{
-    text-decoration: none;
-}
-main button{
-    border: 0px;
-    padding: 5px 20px;
-    border-radius: 50px;
-    color: #fff;
-    background-color: orange;
-}
-
-main .main{
-    text-align: center;
-    font-size: 24px;
-}
-
-
-
 #footer {
     background-color: rgb(17, 17, 17);
 }
@@ -118,8 +82,7 @@ main .main{
     text-decoration: none;
 }
 
-hr{
-    color: green;
+#footer .container hr{
     border: 1px solid gray;
 }
 #footer .footer__bottom {
