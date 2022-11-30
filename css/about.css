@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header {
+    background: var(--alice-blue-1);
+    width: 100%;
+    height: 100px;
+    background-color: #edf1f7;
+    z-index: 100;
+}
+
+header .container span a {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header .container ul {
+    display: inline-flex;
+    margin: 0;
+}
+
+header .container ul li {
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+header .container ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+header .container ul li a:hover {
+    color: rgb(11, 146, 101);
+}
+
+header .container a {
+    padding: 20px;
+    color: rgb(236, 65, 63);
+}
+
+
+
+#footer {
+    background-color: rgb(17, 17, 17);
+}
+
+#footer .container {
+    width: 1280px;
+    margin: auto;
+    padding: 25px 0;
+}
+
+#footer .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .content ul li {
+    display: block;
+    color: #3F4048;
+}
+ #footer .container ul h2{
+    font-size: 25px;
+ }
+#footer .content ul li a {
+    color: rgb(85, 76, 76);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#footer .container hr{
+    border: 1px solid gray;
+}
+#footer .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .container .footer__bottom .social i {
+    padding-left: 20px;
+}
+
+.fa-facebook {
+    color: rgba(0, 162, 255, 0.505)
+}
+
+.fa-instagram {
+    color: rgba(255, 166, 0, 0.458);
+}
+
+.fa-twitter {
+    color: rgba(0, 255, 255, 0.501);
+}
+
+.fa-youtube {
+    color: rgba(255, 0, 0, 0.468);
+}

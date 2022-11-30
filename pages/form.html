@@ -14,37 +14,36 @@
     <div class="wrapper">
         <div class="title-text">
             <div class="title login">
-                Login Form
+                Đăng nhập
             </div>
             <div class="title signup">
-                Signup Form
+                Đăng ký
             </div>
         </div>
         <div class="form-container">
             <div class="slide-controls">
                 <input type="radio" name="slide" id="login" checked>
                 <input type="radio" name="slide" id="signup">
-                <label for="login" class="slide login">Login</label>
-                <label for="signup" class="slide signup">Signup</label>
+                <label for="login" class="slide login">Đăng nhập</label>
+                <label for="signup" class="slide signup">Đăng ký</label>
                 <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
                 <form action="#" class="login">
                     <div class="field">
-                        <input type="text" placeholder="Email Address" required>
+                        <input id="username" type="text" placeholder="Địa chỉ Email">
                     </div>
                     <div class="field">
-                        <input type="password" placeholder="Password" required>
+                        <input id="password" type="password" placeholder="Mật khẩu">
                     </div>
                     <div class="pass-link">
-                        <a href="#">Forgot password?</a>
+                        <a href="#">Quên mật khẩu?</a>
                     </div>
                     <div class="field btn">
-                        <div class="btn-layer"></div>
-                        <input type="submit" value="Login">
+                        <button id="submit" onclick="validate()" value="login">Đăng nhập</button>
                     </div>
                     <div class="signup-link">
-                        Not a member? <a href="">Signup now</a>
+                        Không có tài khoản? <a href="">Đăng ký ngay</a>
                     </div>
                 </form>
                 <form action="#" class="signup">
@@ -66,23 +65,28 @@
         </div>
     </div>
     <script>
-        const loginText = document.querySelector(".title-text .login");
-        const loginForm = document.querySelector("form.login");
-        const loginBtn = document.querySelector("label.login");
-        const signupBtn = document.querySelector("label.signup");
-        const signupLink = document.querySelector("form .signup-link a");
-        signupBtn.onclick = (() => {
-            loginForm.style.marginLeft = "-50%";
-            loginText.style.marginLeft = "-50%";
-        });
-        loginBtn.onclick = (() => {
-            loginForm.style.marginLeft = "0%";
-            loginText.style.marginLeft = "0%";
-        });
-        signupLink.onclick = (() => {
-            signupBtn.click();
-            return false;
-        });
+        var attempt = 3;
+        function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "dtl@gmail.com" && password == "dtlstore_123") {
+                alert("Login successfully");
+                window.location = "success.html"; // Redirecting to other page.
+                return false;
+            }
+            else {
+                attempt--;// Decrementing by one.
+                alert("Lỗi đăng nhập username và password không đúng");
+                if (attempt == 0) {
+                    document.getElementById("username").disabled = true;
+                    document.getElementById("password").disabled = true;
+                    document.getElementById("submit").disabled = true;
+                    return false;
+                }
+            }
+        }
+
+
     </script>
 </body>
 
