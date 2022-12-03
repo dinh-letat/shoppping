@@ -90,7 +90,7 @@ main .main{
 
 
 #footer {
-    background-color: rgb(17, 17, 17);
+    background-color: #edf1f7;
 }
 
 #footer .container {
@@ -105,12 +105,13 @@ main .main{
     align-items: center;
 }
 
-#footer .content ul li {
+#footer .container ul li {
     display: block;
-    color: #3F4048;
+    color: black;
 }
- #footer .container ul h2{
+#footer .container h3{
     font-size: 25px;
+    color: black;
  }
 #footer .content ul li a {
     color: rgb(85, 76, 76);
@@ -118,8 +119,7 @@ main .main{
     text-decoration: none;
 }
 
-hr{
-    color: green;
+#footer .container hr{
     border: 1px solid gray;
 }
 #footer .footer__bottom {
